@@ -8,11 +8,12 @@ sap.ui.define([
             onInit: function () {
                 console.log("CICD check");
                 console.log("CICD check 2");
-
+                console.log("CICD check 3");
             },
             onAdd: function () {
                 console.log("on Add function for CICD check");
                 console.log("on Add function for CICD check 2");
+                console.log("on Add function for CICD check 3");
                 var oPay = {
                     id: null, name: "", department: ""
                 };
