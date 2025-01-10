@@ -6,10 +6,10 @@ sap.ui.define([
 
         return Controller.extend("odatav22ui.controller.View1", {
             onInit: function () {
-                console.log("CICD check");
+                console.log("CICD check!");
             },
             onAdd: function () {
-                console.log("on Add function for CICD check");
+                console.log("on Add function for CICD check!");
                 var oPay = {
                     id: null, name: "", department: ""
                 };
