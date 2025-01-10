@@ -1,0 +1,55 @@
+<mvc:View controllerName="odatav22ui.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" title="Employee details">
+        <content>
+            <Table id="idEmpTbl"
+		inset="false"
+		items="{
+			path: '/Emp'
+		}">
+		<headerToolbar>
+			<OverflowToolbar>
+				<content>
+					<ToolbarSpacer />
+					<Button text="Add entry" press="onAdd" />
+					<Button text="Add direct entry" press="onAddHarCoded" />
+                    <Button text="Save" press="onSave" />
+					<Button text="Update" press="onUpdate" />
+                    <Button text="Refresh" press="onRefresh" />
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Employee ID" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Name" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Department" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle">
+				<cells>
+                    <Input
+						value="{id}" />
+					<Input
+						value="{name}" />
+					<Input
+						value="{department}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+        </content>
+    </Page>
+</mvc:View>
